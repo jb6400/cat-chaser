@@ -1,0 +1,66 @@
+*{
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Baloo 2', cursive;
+  color: #e75480;
+}
+
+body{
+  background-color: pink;
+}
+
+.string{
+  font-size: 36pt;
+  /* outline: solid; */
+  display: flex;
+  align-items: center;
+  animation: runAway 5s 1;
+  position: relative;
+  animation-fill-mode: forwards;
+  overflow: hidden;
+}
+
+.cat{
+  /* outline: solid; */
+  position: relative;
+  animation: run 3s 1;
+  /* animation-timing-function: ease-out; */
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+
+}
+
+.cont{
+  /* display: flex;
+  flex-direction: row; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  display: grid;
+  grid-column-end: span 2;
+  overflow: hidden;
+}
+
+.mainCont{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 2vmin;
+  overflow: hidden;
+}
+
+h1{
+  font-size: 48pt;
+  text-align: center;
+  display: grid;
+  grid-column-end: span 4;
+}
+
+@keyframes runAway {
+  0% {left:0vmin;}
+  50% {left: 75vmin; font-style: italic;}
+  100% {left: 150vmin; font-style: italic ;}
+}
+
+@keyframes run {
+  0% {left: 0vmin;}
+  100% {left: 150vmin;}
+}
